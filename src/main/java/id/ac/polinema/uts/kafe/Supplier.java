@@ -15,28 +15,28 @@ package id.ac.polinema.uts.kafe;
  */
 public class Supplier {
 
+    private String name;
+    private String city;
     /** Membuat pemasok dengan nama dan kota asal. */
     public Supplier(String name, String city) {
         // TODO Bantuan: nama parameter sama dengan nama field. Kata kunci apa yang
         // menunjuk ke objek yang sedang dibuat?
         //
         // Kerangka:
-        //   this.name = ____;
-        //   this.city = ____;
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.name = name;
+        this.city = city;
     }
 
     public String getName() {
         // TODO Bantuan: kembalikan data yang disimpan constructor.
         //
         // Kerangka:
-        //   return ____;
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     public String getCity() {
         // TODO Bantuan: sama seperti getName.
-        throw new UnsupportedOperationException("Not implemented yet");
+        return city;
     }
 
     /** Teks berbentuk "nama (kota)". Contoh: Kopi Nusantara (Malang). */
@@ -44,7 +44,6 @@ public class Supplier {
         // TODO Bantuan: gabungkan dua data dengan operator + dan tanda kurung dalam String.
         //
         // Kerangka:
-        //   return name + " (" + ____ + ")";
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name + " (" + city + ")";
     }
 }
