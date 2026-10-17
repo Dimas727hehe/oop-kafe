@@ -25,7 +25,8 @@ public class Food extends MenuItem{
         return 35000;
     }
 
+    @Override 
     public String describe() {
-        return super.describe()+" ["+prepMinutes+" min]";
+        return (name+" ("+year+") ["+prepMinutes+" min]");
     }
 }

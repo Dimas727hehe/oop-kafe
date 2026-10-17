@@ -59,10 +59,6 @@ public class MenuItem {
         }
     }
 
-    public void setAvailable() {
-        this.available = true;
-    }
-
     public String getName() {
         return name;
     }
@@ -90,11 +86,11 @@ public class MenuItem {
         // Method ini punya dua jalur return yang berbeda.
         //
         // Kerangka:
-        if (available) {
-            available = false;
-            return true;
+        if (!available) {            
+            return false;
         }
-        return false;
+        available = false;
+        return true;
     }
 
     /** Mengembalikan stok (misalnya karena refund): minuman bisa dijual lagi. */
@@ -135,7 +131,7 @@ public class MenuItem {
     }
 
     public String describe(){
-        return (name+" ("+year+") ");
+        return (name+" ("+year+")");
     }
     
     public String toString() {

@@ -61,6 +61,10 @@ public class Beverage extends MenuItem {
         return code;
     }
 
+    public void setSupplier(Supplier supplier){
+        this.supplier = supplier;
+    }
+
     public Supplier getSupplier(){
         return supplier;
     }
@@ -70,11 +74,12 @@ public class Beverage extends MenuItem {
         return 25000;
     }
 
+    @Override
     public String describe() {
         if (supplier == null){
-            return super.describe() + " from Unkown";
+            return (name+" ("+year+") from Unknown");
         } else {
-            return super.describe() + " from " + supplier;
+            return (name+" ("+year+") from " + supplier.getName());
         }
     }
 }

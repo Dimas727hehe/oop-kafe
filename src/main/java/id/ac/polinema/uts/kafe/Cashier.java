@@ -12,7 +12,7 @@ public class Cashier {
 
     public boolean refund(Customer customer, Beverage beverage){
         if(customer.getItemCount() != 0 && beverage.isAvailable() == false){
-            beverage.setAvailable();
+            beverage.restock();
             customer.removeOrder();
             return true;
         }
