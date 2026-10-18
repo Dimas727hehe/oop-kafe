@@ -22,7 +22,7 @@ public class Main {
         // spasi harus persis sama. Tulis perintahnya di dalam kurung kurawal main ini,
         // lalu jalankan programnya.
         
-        System.out.println("Welcome to Polinema Cafe\n");
+        System.out.println("Welcome to Polinema Cafe");
 
         
 
