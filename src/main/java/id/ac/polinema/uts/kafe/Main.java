@@ -14,23 +14,27 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Polinema Cafe");
 
-        Cafe cafe = new Cafe("Polinema Cafe");
+        
         // TODO: Tampilkan sebuah teks ke layar.
         // Di Java, perintahnya berbentuk: System.out.println("teks kamu");
         // Ganti teks di dalam tanda kutip dengan teks dari soal. Huruf besar-kecil dan
         // spasi harus persis sama. Tulis perintahnya di dalam kurung kurawal main ini,
         // lalu jalankan programnya.
+        
+        System.out.println("Welcome to Polinema Cafe\n");
+
+        
+
+        // Bagian 7: lanjutkan di sini (buat Cafe, isi data contoh, jalankan CafeApp).
+        Cafe cafe = new Cafe("Polinema Cafe");
 
         cafe.addItem(new Beverage("1", "Americano", 2015, new Supplier("Dimas", "Malang")));
         cafe.addItem(new Food("Nasgor Komplit", 2017, 15));
         cafe.addItem(new Dessert("Pisang Coklat", 2012, 205));
         cafe.addCustomer(new Customer("C001", "Budi"));
 
-        CafeApp aplikasi = new CafeApp(cafe, new Scanner(System.in), System.out);
-        aplikasi.run();
-
-        // Bagian 7: lanjutkan di sini (buat Cafe, isi data contoh, jalankan CafeApp).
+        CafeApp cafeApp = new CafeApp(cafe, new Scanner(System.in), System.out);
+        cafeApp.run();
     }
 }
