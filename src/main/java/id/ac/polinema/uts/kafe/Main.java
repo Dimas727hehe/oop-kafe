@@ -27,7 +27,7 @@ public class Main {
         
 
         // Bagian 7: lanjutkan di sini (buat Cafe, isi data contoh, jalankan CafeApp).
-        System.out.println("\n");
+
         Cafe cafe = new Cafe("Polinema Cafe");
 
         cafe.addItem(new Beverage("1", "Americano", 2015, new Supplier("Dimas", "Malang")));
