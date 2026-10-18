@@ -22,12 +22,12 @@ public class Main {
         // spasi harus persis sama. Tulis perintahnya di dalam kurung kurawal main ini,
         // lalu jalankan programnya.
         
-        System.out.println("Welcome to Polinema Cafe");
+        System.out.print("Welcome to Polinema Cafe");
 
         
 
         // Bagian 7: lanjutkan di sini (buat Cafe, isi data contoh, jalankan CafeApp).
-        Cafe cafe = new Cafe("Polinema Cafe");
+        Cafe cafe = new Cafe("\nPolinema Cafe");
 
         cafe.addItem(new Beverage("1", "Americano", 2015, new Supplier("Dimas", "Malang")));
         cafe.addItem(new Food("Nasgor Komplit", 2017, 15));
