@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("Welcome to Polinema Cafe");
         Cafe cafe = new Cafe("Polinema Cafe");
         // TODO: Tampilkan sebuah teks ke layar.
         // Di Java, perintahnya berbentuk: System.out.println("teks kamu");
