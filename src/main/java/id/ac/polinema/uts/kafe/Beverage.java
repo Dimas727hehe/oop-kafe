@@ -77,9 +77,9 @@ public class Beverage extends MenuItem {
     @Override
     public String describe() {
         if (supplier == null){
-            return (name+" ("+year+") from Unknown");
+            return (super.describe() + " from Unknown");
         } else {
-            return (name+" ("+year+") from " + supplier.getName());
+            return (super.describe() + " from " + supplier.getName());
         }
     }
 }
